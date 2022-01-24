@@ -25,7 +25,7 @@ public class InvoiceController {
 	@Autowired
     private InvoiceDAO invoiceDao;
     
-    @GetMapping(path="/", produces = "application/json")
+    @GetMapping(path="/getAllInvoices", produces = "application/json")
     public Invoices getInvoices() 
     {
         return InvoiceDAO.getAllInvoices();
